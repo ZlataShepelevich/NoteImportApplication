@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  postgres:
+    container_name: postgresnoteapp
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: "note_import_db"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5401:5432"
